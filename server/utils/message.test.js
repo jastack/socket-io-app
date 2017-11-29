@@ -8,7 +8,7 @@ describe('generateMessage', () => {
 
     var res = generateMessage(from, text);
     // assert from match
-    expect(res).toMatchObject({from, text})
+    expect(res).toMatchObject({from, text});
     // assert createdAt is a number
     expect(typeof res.createdAt).toBe('number');
 
